@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/marie-michele-bouchard-PZq0NqAwTFI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 80,
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    .todo-app {
+        background-color: hwb(208 94% 0% / 0.417);
+        backdrop-filter: blur(3px);
+        border-radius: 24px;
+        border: 3px solid hsla(0, 0%, 0%, 0.116);
+        box-shadow:0 0 100px hsla(0, 0%, 0%, 0.228);
+        padding: 4rem;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+         }
+         h1 {
+            font-weight: normal;
+         }
+         .input-area {
+            padding: 6px;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            #task-input{
+                padding: 8px;
+                border: none;
+                border-radius: 6px;
+            }
+
+            #add-task-btn {
+                padding: 6px;
+                border: none;
+                border-radius: 4px;
+            }
+         }
+         .todos-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+                img#no-todos {
+                max-height: 80%;
+                max-width: 80%;
+                object-fit: fit;
+                } 
+         }
+}
+

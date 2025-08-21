@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=forms_apps_script" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>To-do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>My To-Do List</h1>
+            <form class="input-area">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button type="submit" id="add-task-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+
+            <div class="todos-container">
+                <ul id="task-list">
+                </ul>
+                <img src="img/note.png" alt="no-todos" id="no-todos"> 
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
